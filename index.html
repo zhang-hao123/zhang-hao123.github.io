@@ -458,7 +458,7 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/../../images/0.jpg');">
+                 style="background-image: url('/../../images/1.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col s10 offset-s1">
@@ -500,7 +500,7 @@
         }
 
         coverSlider.carousel({
-            duration: Number('150'),
+            duration: Number('10'),
             fullWidth: true,
             indicators: 'true' === 'true',
             onCycleTo() {
@@ -589,7 +589,7 @@
     
     <div class="col s12" >
         
-             <div class="post-card" style="background-image: url('/../../images/0.jpg')">
+             <div class="post-card" style="background-image: url('/../../images/1.jpg')">
         
             <div class="post-body">
                 <div class="post-categories">
@@ -635,7 +635,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Hello World">
                             
                             <span class="card-title">Hello World</span>
                         </div>
@@ -687,7 +687,7 @@
                     <a href="/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/">
                         <div class="card-image">
                             
-                            <img src="/../../images/0.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
+                            <img src="/../../images/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
                             
                             <span class="card-title">typora-vue-theme主题介绍</span>
                         </div>
@@ -747,8 +747,6 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
@@ -756,10 +754,8 @@
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
         
-        display: none;
-        
         font-size: 15px;
-        color: #42b983;
+        color: blue;
     }
 
     
@@ -779,15 +775,15 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="1832381575"
+                   id="6811242734"
                    fixed='true'
-                   autoplay='true'
-                   theme='#42b983'
+                   autoplay='false'
+                   theme='blue'
                    loop='all'
                    order='random'
                    preload='auto'
                    volume='0.7'
-                   list-folded='true'
+                   list-folded='false'
         >
         </meting-js>
     </div>
@@ -836,7 +832,7 @@
             
                 <span id="sitetime"> Loading ...</span>
                 <script>
-                    var calcSiteTime = function () {
+                    var calcSiteTime =setInterval( function () {
                         var seconds = 1000;
                         var minutes = seconds * 60;
                         var hours = minutes * 60;
@@ -860,6 +856,9 @@
                         var diff = t2 - t1;
                         var diffYears = Math.floor(diff / years);
                         var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff / hours) - diffDays * 24 );
+                        var diffMinutes = Math.floor((diff / minutes) - diffHours * 60 - diffDays * 24 * 60);
+                        var diffSeconds = Math.floor((diff / seconds) - diffHours * 60 * 60 - diffDays * 24 * 60 * 60 - diffMinutes * 60);
 
                         // 区分是否有年份.
                         var language = 'zh-CN';
@@ -867,7 +866,7 @@
                             document.getElementById("year").innerHTML = todayYear;
                             var daysTip = 'This site has been running for ' + diffDays + ' days';
                             if (language === 'zh-CN') {
-                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                                daysTip = '本站已运行 ' + diffDays + ' 天 ' + diffHours + ' 小时 ' + diffMinutes + ' 分钟 ' + diffSeconds + ' 秒 ';
                             } else if (language === 'zh-HK') {
                                 daysTip = '本站已運行 ' + diffDays + ' 天';
                             }
@@ -877,23 +876,18 @@
                             var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
                                 + diffDays + ' days';
                             if (language === 'zh-CN') {
-                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天 ' + diffHours + ' 小时 ' + diffMinutes + ' 分钟 ' + diffSeconds + ' 秒 ';
                             } else if (language === 'zh-HK') {
                                 yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
                             }
                             document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
                         }
-                    }
+                    },1000)
 
                     calcSiteTime();
                 </script>
             
             <br>
-            
-                <span id="icp"><img src="/medias/icp.png"
-                                    style="vertical-align: text-bottom;"/>
-                <a href="https://beian.miit.gov.cn/#/home" target="_blank">湘ICP备2021004871号-1</a>
-            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
