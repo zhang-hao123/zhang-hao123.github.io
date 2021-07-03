@@ -361,6 +361,9 @@
 </div>
 
 <style>
+    body {
+        color: #34495e
+    }
     #send{
         margin-bottom: 10px;
         width: 49%;
@@ -371,12 +374,122 @@
         width: 49%;
         background-color: #e7c65c;
     }
-    p{
+    hr {
+        width: 90%;
+    /* margin: auto; */
+    margin: 30px auto;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    b {
+        margin: 42px 0 18px 50px;
+        
+    }
+    /* 增加每日一言模块 */
+    .poem-wrap {
+        position: relative;
+        width: 730px;
+        max-width: 80%;
+        border: 2px solid #797979;
+        border-top: 0;
         text-align: center;
+        margin: 120px auto 50px;
+    }
+    .poem-left {
+        left: 0;
+    }
+    .poem-border {
+        position: absolute;
+        height: 2px;
+        width: 27%;
+        background-color: #797979;
+    }
+    .poem-right {
+        right: 0;
+    }
+    .poem-wrap h1 {
+        position: relative;
+        margin-top: -20px;
+        display: inline-block;
+        letter-spacing: 4px;
+        color: #797979;
+        font-size: 30px;
+        margin: -20px auto 20px;
+    }
+    .poem-wrap p:nth-of-type(1) {
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .poem-wrap p {
+        width: 70%;
+        margin: auto;
+        line-height: 30px;
+        color: #797979;
+        font-family: "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+    }
+    .poem-wrap p:nth-of-type(2) {
+        font-size: 18px;
+        margin: 15px auto;
+    }
+    .bozhushuo {
+        text-align: center;
+        font-size: 19px!important;
+        margin: 0 0 12px!important;
+        line-height: 1.9rem;
+        font-family: "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+    }
+    .notice {
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 95%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+    hr {
+        height: 2px;
     }
 </style>
+
+
 <main class="content">
+    
     <div id="contact" class="container chip-container">
+        <!-- 加入网易云音乐热门评论，实时更新 -->
+        <div class="poem-wrap">
+            <div class="poem-border poem-left">
+            </div>
+            <div class="poem-border poem-right">
+            </div>
+            <h1>网易云热评</h1>
+            <p id="poem">loading...</p>
+            <p id="info">loading...</p>
+            <script>
+            $.get("https://v1.hitokoto.cn?c=d&c=h&c=j",function(data){
+                
+                    console.log(data);
+                    $('#poem').html(data.hitokoto)
+                    if(data.from_who!=null){
+                        console.log("456");
+                        $('#info').html(data.from_who+" · "+ "《 "+data.from+" 》");
+                        }
+                        else{
+                            $('#info').html(" “ "+data.from+"” ");
+                        }
+                });
+        </script>
+        </div>
         <div class="card">
             <div class="card-content">
                 <div class="tag-title center-align">
@@ -387,13 +500,17 @@
             <!--valine评论弹幕-->
             
                 <p>
-                    <b>畅所欲言</b><br>
-                    <b>在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链</b><br>
-                    <b>友链信息</b><br>
+                    <b style="font-size: 1.8rem;
+                    font-weight: bold;
+                    line-height: 1.8rem;">畅所欲言</b><br><hr>
+                    <b>在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链</b><br><hr>
+                    <b style="font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.8rem;">友链信息</b><br><hr>
                     <b>博客名称: 大笨钟</b><br>
                     <b>博客网址: http://myblog.zhang14198.cn</b><br>
                     <b>博客头像: http://myblog.zhang14198.cn/medias/logo.png</b><br>
-                    <b>博客介绍: 犹豫就会败北</b><br>
+                    <b>博客介绍: 分享前端知识，记录成长过程</b><br><hr>
                 </p>
                 <div class="container">
                     <section id="custom" class="bb-section">
@@ -402,9 +519,6 @@
                                 <form class="form-inline">
                                     <div class="form-group">
                                         文字：<input class="form-control" name="info" type="text" placeholder="hello, world"/>
-                                    </div>
-                                    <div class="form-group">
-                                        链接：<input class="form-control" name="href" type="text" placeholder="https://github.com/blinkfox/hexo-theme-matery"/>
                                     </div>
                                     <div class="form-group">
                                         速度：<input  class="form-control"  name="speed" type="text" placeholder="5~20" value="16" />
