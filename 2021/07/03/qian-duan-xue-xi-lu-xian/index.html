@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="typora-vue-theme主题介绍, 大笨钟">
+    <meta name="keywords" content="前端学习路线, 大笨钟">
     <meta name="description" content="个人博客，前端，计算机">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>typora-vue-theme主题介绍 | 大笨钟</title>
+    <title>前端学习路线 | 大笨钟</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/../../images/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">typora-vue-theme主题介绍</h1>
+                    <h1 class="description center-align post-title">前端学习路线</h1>
                 </div>
             </div>
         </div>
@@ -325,10 +325,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -337,12 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                                <span class="chip bg-color">学习路线</span>
                             </a>
                         
-                            <a href="/tags/Markdown/">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -353,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category">
-                                Markdown
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
                     </div>
@@ -366,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-07
+                    2021-07-03
                 </div>
                 
 
@@ -375,14 +469,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -405,7 +499,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="1-HTML5-CSS3"><a href="#1-HTML5-CSS3" class="headerlink" title="1.HTML5 + CSS3"></a>1.HTML5 + CSS3</h2><p>&emsp;&emsp;根据web前端发展史，建议大家先学习pc端页面开发。 包含： HTML5、CSS3、浮动、定位、盒子模型、高级技巧等等。 不用说，这是我们前端入门的最基本要求，目的是能完成页面的布局开发，这部分必须精通。 这部分知识比较简单， 不要去买书看了（太浪费时间），直接看pink老师视频就够了哈。</p>
+<h4 id="视频地址：https-www-bilibili-com-video-av80149248"><a href="#视频地址：https-www-bilibili-com-video-av80149248" class="headerlink" title="视频地址：https://www.bilibili.com/video/av80149248"></a>视频地址：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av80149248">https://www.bilibili.com/video/av80149248</a></h4><h2 id="2-移动端页面开发"><a href="#2-移动端页面开发" class="headerlink" title="2.移动端页面开发"></a>2.移动端页面开发</h2><p>&emsp;&emsp;我们先学习了pc端页面开发，但是现在移动端太常见了，所以我们也需要做移动端页面开发。 主要学习移动端常见布局：流失布局、flex布局、rem布局、响应式布局等。 其中市场rem布局用的最多了，重点掌握。 网上相应的布局视频很多，可以重点学习。 最终起码把几个大厂的移动端首页写出来才可以。比如淘宝、京东、小米等。</p>
+<h2 id="3-JavaScript-系列"><a href="#3-JavaScript-系列" class="headerlink" title="3.JavaScript 系列"></a>3.JavaScript 系列</h2><p>&emsp;&emsp;JavaScript是我们前端的核心，需要精通掌握，可以直接学习ES5，ES6就可以了。这样就可以让我们页面交互效果动态展示起来了。 包含： JavaScript 基础语法及 Web API 开发动态交互（⽹⻚特效）的⽹⻚、JavaScript ⾼级特性，如⾯向对象、闭包、事件循环等技术、 jQuery也要了解一些，现在市场很多老项目还是大量有jQuery的，你说不会jQuery，人家不相信你前端工作过。。。</p>
+<h4 id="学习渠道："><a href="#学习渠道：" class="headerlink" title="学习渠道："></a>学习渠道：</h4><p>&emsp;&emsp;首推B站， 还有 慕课，腾讯课堂等。搜索相关关键字即可。JavaScript 相关面试题可以去 掘金、牛客网、github 等网站。 相信我，最好的还是百度。 学到js ，你应该要有自己的 github 或者码云的账号了，里面有大量资源可以让你去查阅学习。</p>
+<h2 id="4-Ajax-和-git"><a href="#4-Ajax-和-git" class="headerlink" title="4.Ajax 和 git"></a>4.Ajax 和 git</h2><p>&emsp;&emsp;前面我们写的所有页面都是静态的，也就是所有的数据都是假数据，实际开发的时候，数据都是从后台获取过来的，那么如何获取后台的相关数据呢？ 答案就是 ajax。<br>&emsp;&emsp;前端必备哦 。通过 Ajax 实现与服务器的通信，获取服务器提供的数 据，然后动态渲染输出，实现动态⽹⻚的开发。学习 git 版本管理⼯具， 实现企业级多⼈协同开。 学到这里，最好有个项目练习， 这样可以更好的明白动态网站是如何开发的。 现在网站都是流行前后端分离，这个阶段我们能知道如何调用后端接口。</p>
+<h2 id="5-Node-js"><a href="#5-Node-js" class="headerlink" title="5.Node.js"></a>5.Node.js</h2><p>&emsp;&emsp;相信学ajax 的时候，很多教程搭配php或者其他后台语言来学习，但是我更推荐ajax和node来学习，毕竟都属于我们前端内容，省去在学习另外一门语言的痛苦。</p>
+<h4 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h4><p>&emsp;&emsp;通过学习 Nodejs 和 MySQL 深⼊理解⽹站的本质，以及前端在整个⽹站开发中的⻆⾊，为在企业中前后端协同开发提供帮助。体会 Nodejs 在前端⼯程化开发中的重要作⽤。</p>
+<h2 id="6-VUE"><a href="#6-VUE" class="headerlink" title="6.VUE"></a>6.VUE</h2><p>&emsp;&emsp;前端三大框架 你肯定听过 vue 、react 、 angular。 国内最火的框架是 vue，有了这些框架，我们开发页面更加快速和高效，性能维护有了极大提高。 目的是：掌握 MVVM、模块化、组件化、状态管理、路由等技术在实战项⽬的应⽤，丰富开发经 验、提升实战能⼒，为⾼薪就业提供保障。</p>
+<h4 id="Vue官网就非常全面：-https-cn-vuejs-org"><a href="#Vue官网就非常全面：-https-cn-vuejs-org" class="headerlink" title="Vue官网就非常全面： https://cn.vuejs.org/"></a>Vue官网就非常全面： <a target="_blank" rel="noopener" href="https://cn.vuejs.org/">https://cn.vuejs.org/</a></h4><p>而且b站上面也非常多的视频教程。学完开发一个pc端和移动端的网站练手。</p>
+<h2 id="7-React"><a href="#7-React" class="headerlink" title="7.React"></a>7.React</h2><p>&emsp;&emsp;如果说vue国内最火，那么国外react是最火的，而且 现在react在国内大厂使用非常普遍，也有越来越多人选择react。</p>
+<h2 id="8-微信小程序"><a href="#8-微信小程序" class="headerlink" title="8.微信小程序"></a>8.微信小程序</h2><p>&emsp;&emsp;小程序也能增加我们就业方向，也需要我们学习。 学习并掌握⼩程序开发的相关知识，能够独⽴完成⼩程序的开发。通过学习跨平台⼩程 序技术⽅案， 实现⼩程序的跨平台⽀持。 首推 uni-app 和 taro 来学。也是火的一塌糊涂。</p>
+
                 
             </div>
             <hr/>
@@ -421,7 +526,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">赵奇</a>
+                    <a href="/about" rel="external nofollow noreferrer">zhanghao</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -431,7 +536,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://myblog.zhang14198.cn/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/">http://myblog.zhang14198.cn/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/</a>
+                    <a href="http://myblog.zhang14198.cn/2021/07/03/qian-duan-xue-xi-lu-xian/">http://myblog.zhang14198.cn/2021/07/03/qian-duan-xue-xi-lu-xian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -444,7 +549,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">赵奇</a>
+                    <a href="/about" target="_blank">zhanghao</a>
                     !
                 </span>
             </div>
@@ -469,12 +574,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Typora/">
-                                    <span class="chip bg-color">Typora</span>
+                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                                    <span class="chip bg-color">学习路线</span>
                                 </a>
                             
-                                <a href="/tags/Markdown/">
-                                    <span class="chip bg-color">Markdown</span>
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
                                 </a>
                             
                         </div>
@@ -968,50 +1073,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/02/hello-world/">
+                <a href="/2021/07/03/qian-duan-xue-xi-lu-xian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="前端学习路线">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">前端学习路线</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            相信很多学习前端的小伙伴，会有很多的疑惑： 我要学习那些技术？ 我要到哪里去学习这些技术呢？ 学习这些技术的目的对就业有什么帮助呢？我学到什么程度可以胜任工作？ …这里，给你们最全的解答。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Diary/" class="post-category">
-                                    Diary
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/PS3/">
-                        <span class="chip bg-color">PS3</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                        <span class="chip bg-color">学习路线</span>
                     </a>
                     
-                    <a href="/tags/Games/">
-                        <span class="chip bg-color">Games</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
                 </div>
@@ -1022,26 +1129,27 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/">
+                <a href="/2021/07/02/markdown-yu-fa/">
                     <div class="card-image">
                         
-                        <img src="/../../images/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
                         
-                        <span class="card-title">typora-vue-theme主题介绍</span>
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Markdown语法">
+                        
+                        <span class="card-title">Markdown语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+                            Markdown基本入门语法
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
                             </span>
                         <span class="publish-author">
                             
@@ -1055,7 +1163,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1096,6 +1203,100 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
@@ -1164,14 +1365,14 @@
             
                 <span id="year">2021</span>
             
-            <span id="year">2021</span>
+            <span id="year">——2021</span>
             <a href="/about" target="_blank">ZhangHao</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">73</span>
+                        class="white-color">1.5k</span>
             
             
             
@@ -1184,9 +1385,9 @@
             </span>
             
             
-                <span id="busuanzi_container_site_uv">
+                <span id="busuanzi_container_page_pv">
                 &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+                    <span id="busuanzi_value_page_pv" class="white-color"></span>
             </span>
             
             <br>
