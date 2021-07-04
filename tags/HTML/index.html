@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="contact, 大笨钟">
+    <meta name="keywords" content="标签: HTML, 大笨钟">
     <meta name="description" content="个人博客，前端，计算机">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>contact | 大笨钟</title>
+    <title>标签: HTML | 大笨钟</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,13 +306,7 @@
 
 </header>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/css/barrager.css">
-<script src="/libs/valine/av-min.js"></script>
-<script src="/libs/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.barrager.js"></script>
-
-<div class="bg-cover pd-header about-cover">
+    <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -360,264 +354,128 @@
     </div>
 </div>
 
-<style>
-    body {
-        color: #34495e
-    }
-    #send{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #0ba360;
-    }
-    #clear{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #e7c65c;
-    }
-    hr {
-        width: 90%;
-    /* margin: auto; */
-    margin: 30px auto;
-    }
-    p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    b {
-        margin: 42px 0 18px 50px;
-        
-    }
-    /* 增加每日一言模块 */
-    .poem-wrap {
-        position: relative;
-        width: 730px;
-        max-width: 80%;
-        border: 2px solid #797979;
-        border-top: 0;
-        text-align: center;
-        margin: 120px auto 50px;
-    }
-    .poem-left {
-        left: 0;
-    }
-    .poem-border {
-        position: absolute;
-        height: 2px;
-        width: 27%;
-        background-color: #797979;
-    }
-    .poem-right {
-        right: 0;
-    }
-    .poem-wrap h1 {
-        position: relative;
-        margin-top: -20px;
-        display: inline-block;
-        letter-spacing: 4px;
-        color: #797979;
-        font-size: 30px;
-        margin: -20px auto 20px;
-    }
-    .poem-wrap p:nth-of-type(1) {
-        font-size: 25px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .poem-wrap p {
-        width: 70%;
-        margin: auto;
-        line-height: 30px;
-        color: #797979;
-        font-family: "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
-    }
-    .poem-wrap p:nth-of-type(2) {
-        font-size: 18px;
-        margin: 15px auto;
-    }
-    .bozhushuo {
-        text-align: center;
-        font-size: 19px!important;
-        margin: 0 0 12px!important;
-        line-height: 1.9rem;
-        font-family: "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
-    }
-    .notice {
-        margin: 30px auto;
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 95%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
-    }
-    hr {
-        height: 2px;
-    }
-</style>
-
-
 <main class="content">
+
     
-    <div id="contact" class="container chip-container">
-        <!-- 加入网易云音乐热门评论，实时更新 -->
-        <div class="poem-wrap">
-            <div class="poem-border poem-left">
+
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
-            <div class="poem-border poem-right">
-            </div>
-            <h1>网易云热评</h1>
-            <p id="poem">loading...</p>
-            <p id="info">loading...</p>
-            <script>
-            $.get("https://v1.hitokoto.cn?c=d&c=h&c=j",function(data){
+            <div class="tag-chips">
                 
-                    console.log(data);
-                    $('#poem').html(data.hitokoto)
-                    if(data.from_who!=null){
-                        console.log("456");
-                        $('#info').html(data.from_who+" · "+ "《 "+data.from+" 》");
-                        }
-                        else{
-                            $('#info').html(" “ "+data.from+"” ");
-                        }
-                });
-        </script>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
-                </div>
+                
+                <a href="/tags/Typora/" title="Typora: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Typora" style="background-color: #F9EBEA;">Typora
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Markdown/" title="Markdown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Markdown" style="background-color: #F5EEF8;">Markdown
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/HTML/" title="HTML: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="HTML" style="background-color: #D5F5E3;">HTML
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/JS/" title="JS: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="JS" style="background-color: #E8F8F5;">JS
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/CSS/" title="CSS: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="CSS" style="background-color: #FEF9E7;">CSS
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="学习路线: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="学习路线" style="background-color: #F8F9F9;">学习路线
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%89%8D%E7%AB%AF/" title="前端: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="前端" style="background-color: #82E0AA;">前端
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
-            <!--valine评论弹幕-->
-            
-                <p>
-                    <b style="font-size: 1.8rem;
-                    font-weight: bold;
-                    line-height: 1.8rem;">畅所欲言</b><br><hr>
-                    <b>在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链</b><br><hr>
-                    <b style="font-size: 1.8rem;
-        font-weight: bold;
-        line-height: 1.8rem;">友链信息</b><br><hr>
-                    <b>博客名称: 大笨钟</b><br>
-                    <b>博客网址: http://myblog.zhang14198.cn</b><br>
-                    <b>博客头像: http://myblog.zhang14198.cn/medias/logo.png</b><br>
-                    <b>博客介绍: 分享前端知识，记录成长过程</b><br><hr>
-                </p>
-                <div class="container">
-                    <section id="custom" class="bb-section">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        文字：<input class="form-control" name="info" type="text" placeholder="hello, world"/>
-                                    </div>
-                                    <div class="form-group">
-                                        速度：<input  class="form-control"  name="speed" type="text" placeholder="5~20" value="16" />
-                                    </div>
-                                </form>
-                                <div class="form-group">
-                                    <button id="send"  class="btn" onclick="run()">留言</button>
-                                    <button id="clear" class="btn " onclick="clear_barrage()"> 清除</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <script type="text/javascript">
-                    AV.init({
-                        appId: 'Wuq947AeuNoJWeYLI1Ws1S99-gzGzoHsz',
-                        appKey: 'tGX1obQWlsw3lPXaVdmno4nX'
-                    });
-
-                    $(function() {
-                        do_barrager();
-                        async function do_barrager() {
-                            let lists = [];
-                            //查询弹幕
-                            const query = new AV.Query('barrager');
-                            const barrager = await query.find().then((barrager) => {
-                                lists = barrager;
-                            })
-                            let length = lists.length;
-                            let index = 0;
-                            const timer = setInterval(() => {
-                                if (index === length) {
-                                    clearInterval(timer);
-                                    do_barrager()
-                                } else {
-                                    let obj = lists[index]
-                                    let jsonObject = eval('(' + JSON.stringify(obj) + ')');
-                                    $('body').barrager({
-                                        'img': '/medias/barrager/' + Math.floor(Math.random() * 3) + ".png",
-                                        'href': jsonObject.href,
-                                        'info': jsonObject.info,
-                                        'speed': jsonObject.speed
-                                    });
-                                    index++;
-                                }
-                            }, 500)
-                        }
-                    });
-
-                    //发送弹幕
-                    function  run(){
-                        let info = $('input[name=info]').val();
-                        (info === '' ) ?  info='hello world' : info=info;
-                        let href = $('input[name=href]').val();
-                        (href === '' ) ?  href='https://github.com/blinkfox/hexo-theme-matery' : href=href;
-                        let speed = parseInt($('input[name=speed]').val());
-                        if(speed > 20 || speed < 5)
-                            speed = Math.floor(Math.random() * 10) + 5;
-                        const Barrager = AV.Object.extend('barrager');
-                        const barrager = new Barrager();
-                        barrager.set('href', href);
-                        barrager.set('info', info);
-                        barrager.set('speed', speed);
-                        barrager.save().then((todo) => {
-                            $(" input[ name='info' ] ").val("")
-                            $(" input[ name='href' ] ").val("")
-                            $(" input[ name='speed' ] ").val("")
-                        });
-                    }
-
-                    function  clear_barrage()
-                    {
-                        $.fn.barrager.removeAll();
-                    }
-
-                </script>
-            
-        </div>
-
-        <!--其他评论card-->
-        <div class="card">
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
         </div>
     </div>
+</div>
+
+    
+
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="HTML, JS, CSS" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/07/04/qian-duan-mian-shi-ti-yi/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="前端面试题（一）">
+                            
+                            <span class="card-title">前端面试题（一）</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-04
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
+                                面试题
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
