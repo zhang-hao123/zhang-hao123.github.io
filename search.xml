@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Vscode 必备插件</title>
+      <link href="/2021/07/05/vscode-bi-bei-cha-jian/"/>
+      <url>/2021/07/05/vscode-bi-bei-cha-jian/</url>
+      
+        <content type="html"><![CDATA[<h2 id="插件安装步骤"><a href="#插件安装步骤" class="headerlink" title="插件安装步骤"></a>插件安装步骤</h2><p><img src="/2021/07/05/vscode-bi-bei-cha-jian/1.png"></p><h2 id="1-local-history"><a href="#1-local-history" class="headerlink" title="1. local history"></a>1. local history</h2><blockquote><p>修改代码之后想找回历史代码怎么办？<br>&emsp;&emsp;在使用Pycharm、IDEA时可以直接查看本地历史代码，然后轻松恢复之前某个版本。但是，VS Code默认是不支持<strong>local history</strong>的，所以，&gt;仅凭<strong>Ctrl+z</strong>撤销操作时不行的。<br>&emsp;&emsp;安装这款插件之后在侧边栏会出现<strong>LOCAL HISTORY</strong>的字样，每当我们保存更改时，它都会备份一份历史文件，当我们需要恢复之前版本时，只需要点击一下对应的文件即可。此外，它还会在编辑框显示对比详情，能够让你对修改位置一目了然。</p></blockquote><h2 id="2-vscode-icons"><a href="#2-vscode-icons" class="headerlink" title="2. vscode-icons"></a>2. vscode-icons</h2><blockquote><p>&emsp;&emsp;一个好的编辑界面能够让开发过程心情舒畅，甚至可以提升开发效率。显然，VS Code默认的图标是达不到这种程度的。但是，配合<strong>vscode-icons</strong>这款插件就不同了，它具有以下特性，</p></blockquote><ul><li>自定义图标</li><li>自动检测项目</li><li>自定义配置</li></ul><blockquote><p>&emsp;&emsp;它不仅能够给文件夹、文件添加上舒适的图标，而且可以自动检测项目，根据项目不同功能配上不同图标，例如，git、Markdown、配置项、工具类等等。</p></blockquote><h2 id="3-Bracket-Pair-Colorizer"><a href="#3-Bracket-Pair-Colorizer" class="headerlink" title="3. Bracket Pair Colorizer"></a>3. Bracket Pair Colorizer</h2><blockquote><p>&emsp;&emsp;当你看到上述示例中这样包含多层嵌套的括号时，是不是觉得很凌乱？至少，我是这样的，每当看到这样复杂嵌套括号时，尤其代码行数多起来以后，就很难确定哪些是处于同一层次的。不弄明白层次结构，当然阅读代码也会麻烦很多。</p></blockquote><blockquote><p>&emsp;&emsp;<strong>Bracket Pair Colorizer</strong>这款插件可以给<code>()</code>、<code>[]</code>、<code>&#123;&#125;</code>这些常用括号显示不同颜色，当点击对应括号时能够用线段直接链接到一起，让层次结构一目了然。除此之外，它还支持用户自定义符号。</p></blockquote><h2 id="4-Auto-Close-Tag"><a href="#4-Auto-Close-Tag" class="headerlink" title="4.Auto Close Tag"></a>4.Auto Close Tag</h2><blockquote><p>自动闭合HTML/XML标签</p></blockquote><h2 id="5-Auto-Rename-Tag"><a href="#5-Auto-Rename-Tag" class="headerlink" title="5.Auto Rename Tag"></a>5.Auto Rename Tag</h2><blockquote><p>自动完成另一侧标签的同步修改</p></blockquote><h2 id="6-中文（简体）语言包——-Chinese-Simplified-Language-Pack-for-Visual-Studio-Code"><a href="#6-中文（简体）语言包——-Chinese-Simplified-Language-Pack-for-Visual-Studio-Code" class="headerlink" title="6.中文（简体）语言包—— Chinese (Simplified) Language Pack for Visual Studio Code"></a>6.中文（简体）语言包—— Chinese (Simplified) Language Pack for Visual Studio Code</h2><blockquote><p>将编译器转成中文模式</p></blockquote><h2 id="7-Vetur"><a href="#7-Vetur" class="headerlink" title="7.Vetur"></a>7.Vetur</h2><blockquote><p>&emsp;&emsp;Vue多功能集成插件，包括：语法高亮，智能提示，emmet，错误提示，格式化，自动补全，debugger。vscode官方钦定Vue插件，Vue开发者必备。</p></blockquote><h2 id="8-Markdown-Preview-Enhanced"><a href="#8-Markdown-Preview-Enhanced" class="headerlink" title="8.Markdown Preview Enhanced"></a>8.Markdown Preview Enhanced</h2><blockquote><p>实时预览markdown，markdown使用者必备</p></blockquote><p><img src="/2021/07/05/vscode-bi-bei-cha-jian/0.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vscode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端面试题（一）</title>
       <link href="/2021/07/04/qian-duan-mian-shi-ti-yi/"/>
       <url>/2021/07/04/qian-duan-mian-shi-ti-yi/</url>
